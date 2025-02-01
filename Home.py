@@ -29,11 +29,11 @@ with col3:
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"])
-        st.write(f"[Source Code({row["url"]})]") #a link to a projects site (current a place holder)
+        st.write(f"[Source Code({row['url']})]")  # Use single quotes for 'url'
 
 with col4:
     for index, row in df[:10].iterrows(): # [:10] upt ot ten
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"])
-        st.write(f"[Source Code({row["url"]})]")
+        st.write(f"[Source Code({row['url']})]")  # Use single quotes for 'url'
